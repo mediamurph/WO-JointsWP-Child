@@ -1,0 +1,23 @@
+.list-testimonials {
+    .testimonial-item {
+        margin-bottom: 2.73rem;
+    }
+    .testimonial-title {
+        &h2 {
+            font-family: $body-font-family;
+        }  
+    }
+    
+    .testimonial-content {
+        blockquote,
+        .wp-block-quote {
+            border-left: 3px solid map-get( $foundation-palette, primary );
+            &.is-style-large {
+                p {
+                    font-size: /*$global-font-size*/ rem-calc( 18 );
+                    line-height: $paragraph-lineheight + .2;
+                }
+            }
+        }
+    }
+}

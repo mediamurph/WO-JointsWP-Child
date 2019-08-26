@@ -1,0 +1,124 @@
+@import 'settings';
+
+$colour: darken($white, 20%);
+$sh: 0 0 7px rgba(15,19,21,0.9) inset;
+
+
+footer {
+    &#footer {
+        margin-bottom: 0;
+        padding: 1.73rem 0 0 0;
+        -webkit-box-shadow: $sh;
+        box-shadow: $sh;
+        background-color: map-get( $foundation-palette, menuhover );
+        color: $white;
+        
+        ul {
+            &.menu {
+                flex-flow: column nowrap;
+                justify-content: center;
+                
+                margin-left: 0;
+                list-style: none;
+                text-align: center;
+                
+                @include breakpoint( medium ) {
+                    margin-left: 1rem;
+                    list-style: circle;
+                    text-align: left;
+                    
+                }
+                
+                .active {
+                    > {
+                        a {
+                            background-color: lighten( map-get( $foundation-palette, menuhover ), 10%);
+                            color: $white;
+                            
+                            @include breakpoint( medium ) {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+                
+                li {
+                    margin-top: 0.5rem;
+                    
+                    &:hover {
+                        @include breakpoint( medium ) {
+                            list-style: disc;
+                        }
+                    }
+                }
+
+                a,
+                a:visited {
+                    padding: inherit;
+                    line-height: $global-lineheight * 2;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-radius: 4px;
+                    background-color: lighten( map-get( $foundation-palette, menuhover ), 7%);
+                    border-color: $colour;
+                    color: $white;
+                    
+                    @include breakpoint( medium ) {
+                        line-height: normal;
+                        border: none;
+                        background-color: transparent;
+                    }
+
+                    &:hover {
+                        background-color: saturate( map-get( $foundation-palette, menuhover ), 14%);
+                        
+                        @include breakpoint( medium ) {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .cell {
+            margin-bottom: 1.73rem;
+        }
+        
+        .badges {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            
+            @include breakpoint( small only ) {
+                //flex-flow: row wrap;
+                justify-content: center;
+            }
+            
+            img {
+                margin: 0 0 0 $global-margin * .5;
+                
+                @include breakpoint( small only ) {
+                    margin: $global-margin * .5;
+                }
+            }
+        }
+        
+        .copyright {
+            padding-top: 40px;
+            padding-bottom: 30px;
+            font-size: 0.88rem;
+            
+            p {
+                color: $colour;
+                
+                + p {
+                    text-align: left;
+                    
+                    @include breakpoint( medium ) {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
