@@ -15,8 +15,12 @@ function all_testimonials_function() {
     );
     if ( have_posts() ) :
         while ( have_posts() ) : the_post();
-            $return_string .=  '<div class="testimonial-item">';
-            $return_string .=  '<h3 class="testimonial-title">' . get_the_title() . '</h3>';
+            $return_string .=  '<div id="' . get_the_ID() . '" class="testimonial-item">';
+            $return_string .=  '<h3 class="testimonial-title">';
+            $return_string .=  '<a href="' . get_permalink() . '">';
+            $return_string .=  get_the_title();
+            $return_string .=  '</a>';
+            $return_string .=  '</h3>';
             $return_string .=  '<div class="testimonial-content">' . get_the_content() . '</div>';
             $return_string .=  '</div>' . "\n";
         endwhile;

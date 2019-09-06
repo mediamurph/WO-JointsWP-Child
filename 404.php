@@ -1,9 +1,8 @@
 <?php
 /**
- * 404.php
+ * The template for displaying 404 pages (not found)
  * 
- * The 404 template file for the jointswp-child theme
- * 
+ * @package JointsWP-child
  **/
 
 get_header(); 

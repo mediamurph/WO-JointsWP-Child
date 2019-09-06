@@ -1,7 +1,8 @@
 <?php
 /**
- * header.php
- * The header template for the jointswp-child theme
+ * The template for displaying the header
+ * 
+ * @package JointsWP-child
  */
 
 $thumb = '';
@@ -26,7 +27,9 @@ $thumb .= '<style type="text/css">
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <?php wp_head(); echo $thumb; ?>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26672396-2"></script>
 <script>
@@ -37,8 +40,11 @@ $thumb .= '<style type="text/css">
 </script>
 
 </head>
+
+
 <body <?php body_class( array( 'nojem', 'saf') ); ?>>
-<script>
+<?php
+/*<script>
     var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
     var jem = document.getElementsByTagName("BODY")[0];
     jem.classList.remove( 'nojem' );
@@ -47,4 +53,5 @@ $thumb .= '<style type="text/css">
         //jem.classList.remove( 'saf' );
         //jem.classList.add( 'nosaf' );
     } 
-</script>
+</script>*/
+?>

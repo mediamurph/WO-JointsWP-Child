@@ -13,6 +13,19 @@
     }
 }
 
+blockquote.wp-block-quote {
+    &.is-large,
+    &.is-style-large {
+        border-left: 3px solid map-get( $foundation-palette, primary );
+        
+        p {
+            font-size: $global-font-size * 1.2;
+            line-height: $global-lineheight * 1.2;
+            
+        }
+    }
+}
+
 .entry-content {
     figure {
         //max-width: rem-calc( 200 );

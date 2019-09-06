@@ -1,9 +1,8 @@
 <?php
 /**
- * single.php
+ * The template for displaying all single posts and attachments
  * 
- * The single post template file for the jointswp-child theme
- * 
+ * @package JointsWP-child
  **/
 
 get_header(); 

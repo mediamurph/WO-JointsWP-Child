@@ -1,17 +1,25 @@
 {
-  "name": "foundation-sites-template",
+  "name": "jointswp-child",
   "version": "1.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
+  "description": "Wordpress theme for //welwyn-osteopaths.co.uk.",
+  "homepage": "http://welwyn-osteopaths.co.uk",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
     "build": "gulp sass"
   },
+  "keywords": [
+    "JointsWP",
+    "WordPress",
+    "Foundation",
+    "semantic",
+    "mobile first",
+    "responsive"
+  ],
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
+    "url": "https://github.com/mediamurph/WO-JointsWP-Child/issues"
   },
   "dependencies": {
     "foundation-sites": "^6.5.1",
@@ -31,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-sites-template.git"
+    "url": "https://github.com/mediamurph/WO-JointsWP-Child.git"
   },
   "private": true
 }

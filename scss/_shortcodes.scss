@@ -1,11 +1,20 @@
+@import 'settings';
+
 .list-testimonials {
     .testimonial-item {
         margin-bottom: 2.73rem;
     }
-    .testimonial-title {
-        &h2 {
+    
+    h2 {
+        & .testimonial-title {
             font-family: $body-font-family;
-        }  
+        }
+    }
+    
+    h3 {
+        a {
+            color: inherit;
+        }
     }
     
     .testimonial-content {
@@ -14,7 +23,7 @@
             border-left: 3px solid map-get( $foundation-palette, primary );
             &.is-style-large {
                 p {
-                    font-size: /*$global-font-size*/ rem-calc( 18 );
+                    font-size: inherit;
                     line-height: $paragraph-lineheight + .2;
                 }
             }

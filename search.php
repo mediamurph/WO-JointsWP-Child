@@ -1,9 +1,8 @@
 <?php
 /**
- * search.php
+ * The template for displaying search results pages.
  * 
- * The search template file for the jointswp-child theme
- * 
+ * @package JointsWP-child
  **/
 
 get_header(); 

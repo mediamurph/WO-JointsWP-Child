@@ -27,7 +27,7 @@ function jointswp_child_top_nav() {
 		'container'      => false, // Remove nav container
 		'menu_id'        => 'main-nav', // Adding custom nav id
 		'menu_class'     => 'large-horizontal menu', // Adding custom nav class
-		'items_wrap'     => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">' . "\n" . '%3$s' . "\t" . '</ul>' . "\n",
+		'items_wrap'     => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">' . "\n" . "\t\t\t\t\t" . '%3$s' . "\t\t\t\t" . '</ul>' . "\n",
 		'theme_location' => 'main-nav', // Where it's located in the theme
 		'depth'			 => 2, // Limit the depth of the nav
 		'fallback_cb'	 => false, // Fallback function (see below & parent theme)
@@ -41,7 +41,7 @@ function jointswp_child_mobile_nav() {
 		'container'      => false, // Remove nav container
 		'menu_id'        => 'mobile-nav', // Adding custom nav id
 		'menu_class'     => 'large-vertical menu cell auto', // Adding custom nav class
-		'items_wrap'     => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion large-dropdown">' . "\n" . '%3$s' . "\t" . '</ul>' . "\n",
+		'items_wrap'     => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion large-dropdown">' . "\n\t\t\t\t\t" . '%3$s' . "\t\t\t\t" . '</ul>' . "\n",
 		'theme_location' => 'mobile-nav', // Where it's located in the theme
 		'depth'			 => 1, // Limit the depth of the nav
 		'fallback_cb'	 => false, // Fallback function (see below & parent theme)
@@ -53,7 +53,7 @@ function jointswp_child_mobile_nav() {
 class Murph_Menu_Walker extends Walker_Nav_Menu {
 	function start_lvl(&$output, $depth = 2, $args = Array() ) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n\t$indent<ul class=\"menu\">\n";
+		$output .= "\n\t\t\t\t\t\t$indent<ul class=\"menu\">\n";
 	}
 }
 

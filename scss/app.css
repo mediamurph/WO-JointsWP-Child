@@ -4,8 +4,8 @@ Error: File to import not found or unreadable: util/util.
          C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/Configuration/SassFrameworks/bourbon
          C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/Configuration/SassFrameworks/neat
          C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/Configuration/SassFrameworks/base
-        on line 63 of C:/Users/Daniel/Desktop/daniel/websites/wo/wp-content/themes/JointsWP-child/scss/_settings.scss
-        from line 3 of C:\Users\Daniel\Desktop\daniel\websites\wo\wp-content\themes\JointsWP-child\scss\app.scss
+        on line 63 of C:/Users/Daniel/Desktop/WELWYNOSTEOPATHS-LIVE/wp-content/themes/jointswp-child/scss/_settings.scss
+        from line 3 of C:\Users\Daniel\Desktop\WELWYNOSTEOPATHS-LIVE\wp-content\themes\jointswp-child\scss\app.scss
 
 58: @include foundation-flex-classes;
 59: @include foundation-visibility-classes;
@@ -20,8 +20,8 @@ Error: File to import not found or unreadable: util/util.
 68: @import 'html';
 
 Backtrace:
-C:/Users/Daniel/Desktop/daniel/websites/wo/wp-content/themes/JointsWP-child/scss/_settings.scss:63
-C:\Users\Daniel\Desktop\daniel\websites\wo\wp-content\themes\JointsWP-child\scss\app.scss:3
+C:/Users/Daniel/Desktop/WELWYNOSTEOPATHS-LIVE/wp-content/themes/jointswp-child/scss/_settings.scss:63
+C:\Users\Daniel\Desktop\WELWYNOSTEOPATHS-LIVE\wp-content\themes\jointswp-child\scss\app.scss:3
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:45:in `import'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -71,4 +71,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: util/util.\A        Load paths:\A          C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/Configuration/SassFrameworks/bourbon\A          C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/Configuration/SassFrameworks/neat\A          C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/Configuration/SassFrameworks/base\A         on line 63 of C:/Users/Daniel/Desktop/daniel/websites/wo/wp-content/themes/JointsWP-child/scss/_settings.scss\A         from line 3 of C:\Users\Daniel\Desktop\daniel\websites\wo\wp-content\themes\JointsWP-child\scss\app.scss\A \A 58: @include foundation-flex-classes;\A 59: @include foundation-visibility-classes;\A 60: // @include foundation-prototype-classes;\A 61: \A 62: // Motion UI\A 63: @include motion-ui-transitions;\A 64: @include motion-ui-animations;\A 65: \A 66: // WELWYN )STEOPATHS \A 67: \A 68: @import 'html';"; }
+  content: "Error: File to import not found or unreadable: util/util.\A        Load paths:\A          C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/Configuration/SassFrameworks/bourbon\A          C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/Configuration/SassFrameworks/neat\A          C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/Configuration/SassFrameworks/base\A         on line 63 of C:/Users/Daniel/Desktop/WELWYNOSTEOPATHS-LIVE/wp-content/themes/jointswp-child/scss/_settings.scss\A         from line 3 of C:\Users\Daniel\Desktop\WELWYNOSTEOPATHS-LIVE\wp-content\themes\jointswp-child\scss\app.scss\A \A 58: @include foundation-flex-classes;\A 59: @include foundation-visibility-classes;\A 60: // @include foundation-prototype-classes;\A 61: \A 62: // Motion UI\A 63: @include motion-ui-transitions;\A 64: @include motion-ui-animations;\A 65: \A 66: // WELWYN )STEOPATHS \A 67: \A 68: @import 'html';"; }
