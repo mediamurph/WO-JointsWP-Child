@@ -15,7 +15,7 @@ if( has_post_thumbnail() ) {
     $thumb_url = '/wp-content/uploads/banner-louise-north-patrick-pearce.jpg';
 }
 
-$thumb .= '<style type="text/css">
+$thumb .= '<style>
 .hero:before{background-image:url(' . $thumb_url . ') !important;background-position:42% 0;background-size:cover;content:"";}
 </style>'; 
 
@@ -28,7 +28,9 @@ $thumb .= '<style type="text/css">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<?php wp_head(); echo $thumb; ?>
+<!-- HEAD -->
+<?php wp_head(); ?>
+<!-- / HEAD -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26672396-2"></script>
@@ -38,6 +40,9 @@ $thumb .= '<style type="text/css">
   gtag('js', new Date());
   gtag('config', 'UA-26672396-2');
 </script>
+
+<?php echo $thumb; ?>
+
 
 </head>
 
