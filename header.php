@@ -15,6 +15,8 @@ if( has_post_thumbnail() ) {
     $thumb_url = '/wp-content/uploads/banner-louise-north-patrick-pearce.jpg';
 }
 
+    $thumb_url = '/wp-content/uploads/banner-louise-north-patrick-pearce.jpg';
+
 $thumb .= '<style>
 .hero:before{background-image:url(' . $thumb_url . ') !important;background-position:42% 0;background-size:cover;content:"";}
 </style>'; 
@@ -41,9 +43,10 @@ $thumb .= '<style>
   gtag('config', 'UA-26672396-2');
 </script>
 
+ 
 <?php echo $thumb; ?>
 
-
+ 
 </head>
 
 

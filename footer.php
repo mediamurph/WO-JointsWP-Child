@@ -29,7 +29,7 @@
             </div>
             <div class="grid-x copyright">
                 <p class="small-12 medium-6">&copy; Copyright Welwyn Osteopaths <?php echo date("Y"); ?></p>
-                <p class="small-12 medium-6">Powered by <a href="//mediamurph.com" title="Media Murph Web Development">MediaMurph</a></p>
+                <p class="small-12 medium-6">Powered by <a href="http://mediamurph.com" title="Media Murph Web Development">MediaMurph</a></p>
             </div>
         </div>
     </footer><?php // get_template_part( 'parts/content', 'div' ); ?>

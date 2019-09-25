@@ -72,12 +72,13 @@ $_rdc: rgba($_darker-col,0.73);
     position: relative;
     z-index: 6;
     min-height: $_height;
-    height: auto;
+    height: 350px;
     border-bottom: 1px solid lighten( $_col, 50% );
     box-shadow: 0 0 10px 10px rgba(202, 202, 202, 0.25);
     overflow: hidden;
     
     @include breakpoint( medium ) {
+        min-height: $_height;
         height: $_height;
     }
 

@@ -13,14 +13,13 @@ if ( ! function_exists( 'jointswp_child_scripts' ) ) :
     wp_deregister_script( 'jquery' );
 
     // 04 -CDN hosted jQuery placed in the header, as some plugins require that jQuery is loaded in the header. --- CURRENTLY RESIDES IN THE FOOTER I.E. 'TRUE' AS DOES MIGRATE
-    // wp_enqueue_script( 'jquery', "//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js", array(), '3.2.1', /* FALSE */ true );
-    wp_enqueue_script( 'jquery', "//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js", array(), '3.2.1', /* FALSE */ true );
+    wp_enqueue_script( 'jquery', "//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", array(), '1.12.4', /* FALSE */ true );
 
     // 05 - Deregister the jquery-migrate version bundled with WordPress.
     wp_deregister_script( 'jquery-migrate' );
 
-    // 06 - CDN hosted jQuery migrate for compatibility with jQuery 3.x
-    wp_register_script( 'jquery-migrate', '//code.jquery.com/jquery-migrate-3.0.1.min.js', array('jquery'), '3.0.1', true );
+    // 06 - CDN hosted jQuery migrate for compatibility with jQuery x
+    wp_register_script( 'jquery-migrate', '//code.jquery.com/jquery-migrate-1.4.1.min.js', array('jquery'), '1.4.1', true );
 
     // 07 - Enqueue jQuery migrate. Uncomment the line below to enable.
     wp_enqueue_script( 'jquery-migrate' );

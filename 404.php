@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
+ * 404.php
+ * 
+ * The 404 template file for the jointswp-child theme
  * 
  * @package JointsWP-child
  **/

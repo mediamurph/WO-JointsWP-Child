@@ -17,9 +17,9 @@ function all_testimonials_function() {
         while ( have_posts() ) : the_post();
             $return_string .=  '<div id="' . get_the_ID() . '" class="testimonial-item">';
             $return_string .=  '<h3 class="testimonial-title">';
-            $return_string .=  '<a href="' . get_permalink() . '">';
+            //$return_string .=  '<a href="' . get_permalink() . '">';
             $return_string .=  get_the_title();
-            $return_string .=  '</a>';
+            //$return_string .=  '</a>';
             $return_string .=  '</h3>';
             $return_string .=  '<div class="testimonial-content">' . get_the_content() . '</div>';
             $return_string .=  '</div>' . "\n";
@@ -31,6 +31,9 @@ function all_testimonials_function() {
         $return_string == '' ? 'There are no testimonials at present.' : $a . get_testimonial_nav() . $return_string . $z
     );
 }
+
+
+
 function get_testimonial_nav() {
     $return_string = '';
     /*<ul class="testimonial-searchby-menu">
@@ -77,19 +80,26 @@ function all_faqs_function() {
 
 function all_locations_function() {
     $_r = '';    
-    $args = array('cat' => 58, 'orderby' => 'title', 'order' => 'DESC' , 'showposts' => 50);
+    $args = array('cat' => 4, 'orderby' => 'title', 'order' => 'ASC' , 'showposts' => 50);
     $_l = new WP_Query( $args );
     
     if ( $_l->have_posts() ) {
+        $_r .= '<div class="list-locations">';
         while ( $_l->have_posts() ) {
             $_l->the_post();
-            $_r .= '<div id="post-' . get_the_id() . '" class="faq">';
+            $_r .= '<a href="' . get_permalink() . '" id="post-' . get_the_ID() . '" class="loc">';
+            //$_r .= get_the_post_thumbnail( $_post->ID, 'widget-thumbnail' );
+            $_r .= '<img src="' . esc_url( get_the_post_thumbnail_url( $_post->ID, 'thumbnail' ) ) . '" />';
+            $_r .= '<div>';
             $_r .= '<h3>' . get_the_title() . '</h3>';
             
-            //$_r .= '<div>' . the_content() . '</div>';
-            
-            $_r .= '<hr>\n</div>';
+            $_r .= '<div>' . get_the_excerpt() . '</div>';
+            $_r .= '</div>';
+         
+            $_r .= '</a>';
+            //$_r .= '<hr/>';
         };
+        $_r .= '</div>';
     };
     wp_reset_query();
     return ($_r == '' ? 'There are no locations at present.' : $_r);
