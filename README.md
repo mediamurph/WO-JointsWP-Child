@@ -1,47 +1,32 @@
-# Foundation for Sites Template
+# Welwyn Osteopaths JointsWP Child Theme
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+A custom WordPress child theme developed for an earlier version of the Welwyn Osteopaths website.
 
-This is the basic starter project for [Foundation for Sites 6](http://foundation.zurb.com/sites). It includes a Sass compiler and a starter HTML file for you.
+## Status
 
-## Installation
+**Retired - preserved for historical reference only.**
 
-To use this template, your computer needs:
+This theme is no longer installed on either the live Welwyn Osteopaths website or the POPPY staging site. It was designed to work with the former `JointsWP-master` parent theme and Foundation CSS and should not be installed on the current website.
 
-- [NodeJS](https://nodejs.org/en/) (0.12 or greater)
-- [Git](https://git-scm.com/)
+## Repository contents
 
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
+This repository combines:
 
-### Using the CLI
+* the project history and development source preserved in GitHub;
+* the final known server versions of the operational theme files;
+* the final compiled production stylesheets;
+* later server-only functionality, including the banner carousel, WordPress Customizer settings, social-media links and full-width booking template.
 
-Install the Foundation CLI with this command:
+Temporary editor-lock files, unreferenced stylesheet backups and abandoned experimental files have been excluded.
 
-```bash
-npm install foundation-cli --global
-```
+## Stylesheet source
 
-Use this command to set up a blank Foundation for Sites project with this template:
+The final operational stylesheet is:
 
-```bash
-foundation new --framework sites --template basic
-```
+`css/app.css`
 
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
+The files in `scss/`, together with the Gulp and package configuration, are retained as historical development source. They predate some of the final server-side changes and may not reproduce the final compiled stylesheet exactly.
 
-### Manual Setup
+## Compatibility
 
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-sites-template projectname
-```
-
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
-npm install
-```
-
-Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.
+This theme contains dependencies and implementation choices from the former website, including legacy versions of jQuery and Foundation-era markup. It is no longer maintained or supported and is not intended for reuse on a current WordPress installation.
