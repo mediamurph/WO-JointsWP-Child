@@ -27,7 +27,7 @@
     "jquery": "^3.4.1",
     "motion-ui": "~2.0.0",
     "what-input": "^5.1.2",
-    "yarn": "^1.16.0"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
